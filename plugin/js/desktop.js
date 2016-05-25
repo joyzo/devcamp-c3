@@ -13,7 +13,7 @@
         var record = event.record;  //レコード情報を取得
 
         //フィールド値を取得
-        var field_1 = <設定情報から必須元フィールドコードを取得>
+        var field_1 = record[]['value'];
         var check_field_1 = record[config['require-field-1']]['value'];
 
         var field_2 = (config['field-2']) ? record[config['field-2']]['value'] : "";
